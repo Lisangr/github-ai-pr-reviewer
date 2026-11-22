@@ -29,7 +29,7 @@ def call_gemini(diff_text, rules_text):
     if not api_key:
         raise ValueError("Не задан GEMINI_API_KEY")
 
-    model = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
+    model = os.environ.get("GEMINI_MODEL", "gemini-3.5-flash-lite")
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
 
     system_instruction = (
