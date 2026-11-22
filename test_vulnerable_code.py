@@ -3,7 +3,7 @@ import sqlite3
 
 # Уязвимость 1: Захардкоженный токен (подходит под secrets-leak.md)
 API_SECRET_TOKEN = "sk-proj-abcdef1234567890abcdef123456"
-
+API_SECRET_TOKEN1 = "sk-112proj-abcdef123456237890abcdef1231233456
 def get_user(username):
     conn = sqlite3.connect('database.db')
     cursor = conn.cursor()
